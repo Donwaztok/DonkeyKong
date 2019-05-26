@@ -1,0 +1,11 @@
+	for (int i=0; i<my; i++){
+		for (int j=0; j<mx; j++){
+				 if((i==0) &&(j==0)  ){ mapa.map[i][j]=201; }//Canto Superior Esquerdo
+			else if((i==0) &&(j==118)){ mapa.map[i][j]=187; }//Cando Superior Direito
+			else if((i==29)&&(j==0)  ){ mapa.map[i][j]=200; }//Canto Inferior Esquerdo
+			else if((i==29)&&(j==118)){ mapa.map[i][j]=188; }//Canto Inferior Direito
+			else if((j==0) ||(j==118)){ mapa.map[i][j]=186; }//Laterais do Mapa
+			else if((i==0) ||(i==29) ){ mapa.map[i][j]=205; }//Chao e Topo do Mapa
+			else					  { mapa.map[i][j]=  0; }//Vazio
+		}
+	}
